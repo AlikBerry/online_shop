@@ -1,9 +1,12 @@
 from django import forms
-
 from shop.models import Category, Product
 
 
+
+
 class ProductForm(forms.ModelForm):
+
+
     class Meta:
         model = Product
         fields = [
