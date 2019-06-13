@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data">
+        <style>
+            p {
+                display: table-caption;
+            }
+        </style>
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Save">
+    </form>
+{% endblock %}
